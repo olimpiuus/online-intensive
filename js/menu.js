@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuLinks = menu.querySelectorAll('.menu-list__link')
 
     burgerButton.addEventListener('click', () => {
-        menu.classList.add('menu-active')
+        menu.classList.toggle('menu-active')
     })
     menuLinks.forEach((link) => {
         link.addEventListener('click', () => {
